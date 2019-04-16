@@ -1,0 +1,24 @@
+.NavigationItem {
+    list-style: none;
+    margin: 0px 30px 0px 5px;
+}
+
+.NavigationItem a{
+    
+    display: block;
+    padding: 10px;
+    font-family: 'roboto';
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #E88D67;
+    color: #293241;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-out;
+}
+
+.NavigationItem a:hover{
+    text-decoration: none;
+    color: #E88D67;
+    background-color: #293241;
+}

@@ -1,0 +1,48 @@
+
+
+.Hero {
+    top: 0px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.Hero h1 {
+    top: 100px;
+    margin: 0 5%;
+    position: absolute;
+    color: #EAE3CD;
+    display: block;
+    font-size: 2em;
+    text-align: left;
+}
+
+.Hero img {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    opacity: 0.2;
+}
+
+
+@media (min-width: 750px) {
+
+    .Hero img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .Hero h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Merriweather', serif;
+        font-size: 3em;
+        font-weight: 700;
+        color: #EAE3CD;
+        margin-right: 0;
+    }
+}
+
+

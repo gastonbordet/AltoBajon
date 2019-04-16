@@ -1,0 +1,18 @@
+.Recipes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.Recipes h1 {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.Controls {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 150px 10px 10px 10px;
+}

@@ -1,0 +1,62 @@
+.FullRecipe {
+    width: 50%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #313947;
+    padding: 30px;
+    border: 1px solid 313947;
+    box-shadow: 0 0 10px #EE6C4D;
+    border-radius: 5px;
+    
+}
+
+.ContentRecipe img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 10px white;
+}
+
+@media(max-width: 750px) {
+    .FullRecipe {
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        float: left;
+    }
+}
+
+.FullRecipe a {
+    text-decoration: none;
+    color: #3D5A80;
+}
+
+.FullRecipe a:hover {
+    color: white;
+}
+.FullRecipe h1 {
+    font-size: 3em;
+    color: #EE6C4D;
+    text-align: center;
+}
+
+.FullRecipe h3 {
+    color: #E88D67;
+}
+
+.FullRecipe p, li{
+    color: white;
+}
+
+.ContentRecipe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ContentRecipe Button {
+    margin: 20px auto;
+}

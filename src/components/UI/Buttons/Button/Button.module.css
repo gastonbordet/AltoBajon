@@ -1,0 +1,64 @@
+.Button {
+    width: 120px;
+    height: 70px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px auto;
+    font-weight: bold;
+    transition: background-color 0.2s ease-out;
+    border-radius: 4px;
+}
+
+
+.Button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.Success {
+    color: #5C9210;
+    border: 1px solid #5C9210;
+}
+
+.Success:hover {
+    color: white;
+    background-color: #5C9210;
+    border-color: white;
+}
+
+.Danger {
+    color: red;
+    border: 1px solid red;
+}
+
+.Danger:hover {
+    color: white;
+    background-color: red;
+    border-color: white;
+}
+
+.Save {
+    color: #E88D67;
+    border: 1px solid #E88D67;
+    border-radius: 2px;
+}
+
+.Save:hover {
+    color: white;
+    background-color: #E88D67;
+    border-color: white;
+}
+
+.Search {
+    color: #E88D67;
+    border: 1px solid #E88D67;
+}
+
+.Search:hover {
+    background-color: #E88D67;
+    color: white;
+    border-color: white;
+}

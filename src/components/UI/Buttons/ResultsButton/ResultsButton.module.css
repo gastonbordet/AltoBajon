@@ -1,0 +1,16 @@
+.ResultsButton {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    margin: 30px auto;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.ResultsButton:hover {
+    background-color: #EE6C4D;
+    color: white;
+    cursor: pointer;
+}

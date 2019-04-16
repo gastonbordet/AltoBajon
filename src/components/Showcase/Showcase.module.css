@@ -1,0 +1,30 @@
+@keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+.Showcase {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 600px;
+    margin: 50px auto 50px;
+    margin-bottom: 40px;
+
+    opacity: 0;
+    animation: fade-in-right ease 0.4s forwards;
+}
+
+@media (max-width: 750px) {
+  .Showcase {
+    width: 100%;
+    height: auto;
+  }
+}

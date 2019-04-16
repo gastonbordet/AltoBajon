@@ -1,28 +1,41 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {Route, Switch, withRouter} from 'react-router-dom';
+
+import Toolbar from './components/Navigation/Toolbar/Toolbar';
+import Footer from './components/Footer/Footer';
+import Layout from './hoc/Layout/Layout';
+import Recipes from './containers/Recipes/Recipes';
+import InfoRecipe from './containers/InfoRecipe/InfoRecipe';
+import SavedRecipes from './containers/SavedRecipes/SavedRecipes'
+import Auth from './containers/Auth/Auth';
+import Logout from './containers/Auth/Logout/Logout';
 import './App.css';
 
 class App extends Component {
+
+  
   render() {
+
+    const routes = (
+      <Switch>
+        <Route path="/" exact component={Recipes} />
+        <Route path="/inforecipe" exact component={InfoRecipe} />
+        <Route path="/saved-recipes" exact component={SavedRecipes} />
+        <Route path="/auth" exact component={Auth} />
+        <Route path="/logout" exact component={Logout} />
+      </Switch>
+    );
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Layout>
+        <Toolbar />
+        {routes}
+        <Footer />
+      </Layout>
     );
   }
 }
 
-export default App;
+
+
+export default withRouter(App);

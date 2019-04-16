@@ -1,0 +1,38 @@
+.RecipePreview {
+    width: 25%;
+    height: 250px;
+    background-color: #000;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.RecipePreview img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+@media(max-width: 750px) {
+
+    .RecipePreview img {
+        width: auto;
+        height: 100%;
+
+    }
+}
+
+.RecipePreview img:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    /* vuelvo la opacidad a 100% para que no se vea el fondo negro */
+    opacity: 1;
+    cursor: pointer;
+}

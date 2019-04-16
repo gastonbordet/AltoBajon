@@ -1,0 +1,19 @@
+.RecipeItem {
+    text-align: center;
+    width: 300px;
+    list-style: none;
+    background-color: #293241;
+    color: #EE6C4D;
+    border: 1px solid #EE6C4D;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 0.2 ease-out;
+}
+
+.RecipeItem:hover {
+    background-color: #EE6C4D;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
